@@ -21,5 +21,5 @@ request('http://www.capitalbikeshare.com/data/stations/bikeStations.xml', functi
       }
     });
   });
-  fs.writeFileSync('stations.geojson', JSON.stringify(gj));
+  fs.writeFileSync('stations.geojson', JSON.stringify(gj, null, '\t'));
 });
